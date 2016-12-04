@@ -1,0 +1,35 @@
+<div class="container">
+  <form name="uploadForm">
+    <p>
+      <label class="btn btn-info btn-file">
+        Browse<input id="uploadInput" type="file" name="myFiles" onchange="angular.element(this).scope().main.updateSize()" style="display: none;">
+      </label> total size: <span id="fileSize">0</span>
+    </p>
+
+    <div class="row">
+      <div class="col-md-4">
+        <select id="fieldselector" class="form-control" ng-model="main.field" ng-options="o as o for o in main.options" ng-change="main.updateGraph()"></select>
+      </div>
+
+      <div>
+        <input class="btn btn-primary " type="submit" value="Process data" ng-click="main.process()">
+      </div>
+    </div>
+  </form>
+
+  <div>
+    <div id="sidebar">
+      <input type="checkbox" id="togglelegend"> Legend<br/>
+      <div id="legend" style="visibility: hidden;"></div>
+    </div>
+    <div id="graphs">
+      <div id="sequence"></div>
+      <div id="chart">
+        <div id="explanation" style="visibility: hidden;">
+          <span id="percentage"></span><br/>
+          of all requests
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
