@@ -4,7 +4,7 @@
   describe('service webDevTec', function() {
     var webDevTec;
 
-    beforeEach(module('nproject3'));
+    beforeEach(module('kddcup-data-viewer'));
     beforeEach(inject(function(_webDevTec_) {
       webDevTec = _webDevTec_;
     }));

@@ -20,7 +20,7 @@ gulp.task('partials', function () {
       collapseWhitespace: true
     }))
     .pipe($.angularTemplatecache('templateCacheHtml.js', {
-      module: 'nproject3',
+      module: 'kddcup-data-viewer',
       root: 'app'
     }))
     .pipe(gulp.dest(conf.paths.tmp + '/partials/'));

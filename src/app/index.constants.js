@@ -3,7 +3,7 @@
   'use strict';
 
   angular
-    .module('nproject3')
+    .module('kddcup-data-viewer')
     .constant('malarkey', malarkey)
     .constant('moment', moment);
 

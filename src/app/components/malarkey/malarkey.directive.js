@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('nproject3')
+    .module('kddcup-data-viewer')
     .directive('acmeMalarkey', acmeMalarkey);
 
   /** @ngInject */

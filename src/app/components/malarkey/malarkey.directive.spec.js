@@ -12,7 +12,7 @@
     var vm;
     var el;
 
-    beforeEach(module('nproject3'));
+    beforeEach(module('kddcup-data-viewer'));
     beforeEach(inject(function($compile, $rootScope, githubContributor, $q, _$log_) {
       $log = _$log_;
 
